@@ -1,8 +1,10 @@
+
+
 export default function Home() {
   return (
-    <main className="px-21">
+    <main className="px-21 pt-35">
       <section>
-        <h1 className="text-8xl font-bold">Hello, I'm Davi Dias!</h1>
+        <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
 
         <div className="flex gap-4 p-4">
           <button className="bg-[#091F3A] text-[#EAF4FF] rounded-md px-6 py-2">Baixar CV</button>
@@ -13,3 +15,4 @@ export default function Home() {
     </main>
   );
 }
+
