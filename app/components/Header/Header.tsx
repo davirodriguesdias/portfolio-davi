@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+
 export default function Header() {
     return (
         <header className="flex justify-between p-11 px-21 w-full font-semibold">
@@ -13,10 +15,14 @@ export default function Header() {
                         <a href="#">Projetos</a>
                     </li>
                     <li>
-                        <a href="#">Github</a>
+                        <a target='_blank' href="https://github.com/davirodriguesdias" className="flex items-center gap-2">
+                            <FaGithub size={25} />
+                        </a>
                     </li>
                     <li>
-                        <a href="#">Linkedin</a>
+                        <a target='_blank' href="https://www.linkedin.com/in/davi-dias-1606b42b0/" className="flex items-center gap-2">
+                            <FaLinkedin size={25} />
+                        </a>
                     </li>
                 </ul>
             </nav>
