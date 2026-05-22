@@ -193,3 +193,7 @@ body::after {
     border-color: transparent;
   }
 }
+
+.headerSection {
+  height: 100
+}

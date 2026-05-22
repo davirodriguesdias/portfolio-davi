@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="px-21 pt-35">
-      <section id="headerSection">
+    <main className="pt-35">
+      <section id="headerSection" className="h-[60vh] px-21">
         <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
 
         <div className="flex gap-4 p-4">
@@ -14,7 +14,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex justify-evenly" id="aboutSection">
+      <section className="flex justify-evenly h-screen w-screen bg-[#060f1e] px-10 py-60" id="aboutSection">
         <div className="w-[461px] h-[421px] rounded-4xl overflow-hidden">
           <img
             className="w-full h-full object-cover"
