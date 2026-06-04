@@ -1,8 +1,42 @@
 "user client";
 
+import { Projects } from "./components/Projects/Projects";
+
 export default function Home() {
+  const projects = [
+    {
+      id: 1,
+      image: "images/teste.png",
+      title: "Projeto 1",
+      description: "Descrição do projeto 1",
+    },
+    {
+      id: 2,
+      image: "images/teste.png",
+      title: "Projeto 2",
+      description: "Descrição do projeto 2",
+    },
+    {
+      id: 3,
+      image: "images/teste.png",
+      title: "Projeto 3",
+      description: "Descrição do projeto 3",
+    },
+    {
+      id: 4,
+      image: "images/teste.png",
+      title: "Projeto 4",
+      description: "Descrição do projeto 4",
+    },
+    {
+      id: 5,
+      image: "images/teste.png",
+      title: "Projeto 5",
+      description: "Descrição do projeto 5",
+    },
+  ];
+
   return (
-    
     <main className="pt-35">
       <section id="headerSection" className="h-[60vh] px-21">
         <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
@@ -46,45 +80,18 @@ export default function Home() {
         className="h-[150vh] w-screen bg-[#060f1e] px-10 py-60 "
       >
         <h2 className="text-5xl font-bold">Meus Projetos</h2>
-        <div className="flex gap-8">
-          <ProjectCard
-            src="/images/teste.png"
-            alt="Projeto 1"
-            value="Descrição breve do projeto, destacando as tecnologias utilizadas e os resultados alcançados."
-            label="Projeto 1"
-          />
-          <ProjectCard
-            src="/images/teste.png"
-            alt="Projeto 1"
-            value="Descrição breve do projeto, destacando as tecnologias utilizadas e os resultados alcançados."
-            label="Projeto 1"
-          />
-           <ProjectCard
-            src="/images/teste.png"
-            alt="Projeto 1"
-            value="Descrição breve do projeto, destacando as tecnologias utilizadas e os resultados alcançados."
-            label="Projeto 1"
-          />
+        <Projects projects={projects} />
+      </section>
+
+      <section id="skills" className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20" >
+        <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Hard Skills</h2>
+        </div>
+        <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Soft Skills</h2>
         </div>
       </section>
     </main>
   );
 }
-
-function ProjectCard({src, alt, value, label, }: { src: string; alt: string; value: string; label: string }) {
-  return (
-    <div className="py-10">
-      <div className="w-150 rounded-[8px] overflow-hidden">
-        <img className="object-cover" src={src} alt={alt} />
-      </div>
-      <div>
-        <h3 className="text-2xl font-bold my-2">{label}</h3>
-        <p className="text-[1em] text-gray-400 text-justify">
-          {value}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-
+2
