@@ -84,15 +84,38 @@ export default function Home() {
         <Projects projects={projects} />
       </section>
 
-      <section id="skills" className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20" >
+      <section id="skillsSection" className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20" >
         <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Hard Skills</h2>
+          <div>
+            <ul>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>Git</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>SQL</li>
+              <li>API Rest</li>
+              <li>Python</li>
+            </ul>
+          </div>
         </div>
         <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Soft Skills</h2>
+          <div>
+            <ul>
+              <li>Aprendizagem contínua</li>
+              <li>Criatividade</li>
+              <li>Pensamento crítico</li>
+              <li>Comunicação</li>
+              <li>Trabalho em equipe</li>
+              <li>Organização</li>
+            </ul>
+          </div>
         </div>
       </section>
     </main>
   );
 }
-2

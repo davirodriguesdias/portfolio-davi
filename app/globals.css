@@ -194,8 +194,25 @@ body::after {
   }
 }
 
-.headerSection {
+/* .headerSection {
   height: 100
+} */
+
+#skillsSection ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #061426;
+  font-weight: bold;
+  padding: 5px;
+  
+}
+
+#skillsSection li {
+  background: #EAF4FF;
+  padding: 10px 8px;
+  border-radius: 10px;
+  font-size: 1.2em;
 }
 
 
