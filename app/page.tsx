@@ -1,7 +1,19 @@
 "user client";
 
 import { Projects } from "./components/Projects/Projects";
-
+import {
+  SiHtml5,
+  SiCss,
+  SiJavascript,
+  SiTypescript,
+  SiPostgresql,
+  SiPython,
+  SiGit,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+} from "react-icons/si";
+import { FaNodeJs, FaServer } from "react-icons/fa";
 
 export default function Home() {
   const projects = [
@@ -39,7 +51,7 @@ export default function Home() {
 
   return (
     <main className="pt-35">
-      <section id="headerSection" className="h-[60vh] px-21">
+      <section id="headerSection" className="h-[63vh] px-21">
         <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
 
         <div className="flex gap-4 p-4">
@@ -53,7 +65,7 @@ export default function Home() {
       </section>
 
       <section
-        className="flex justify-evenly h-screen w-screen bg-[#060f1e] px-10 py-60"
+        className="flex justify-evenly h-screen w-screen bg-[#060f1e] px-10 py-50"
         id="aboutSection"
       >
         <div className="w-[461px] h-[421px] rounded-4xl overflow-hidden">
@@ -78,32 +90,89 @@ export default function Home() {
 
       <section
         id="projects"
-        className="h-[150vh] w-screen bg-[#060f1e] px-10 py-60 "
+        className="h-[130vh] w-screen bg-[#060f1e] px-10 py-50 "
       >
-        <h2 className="text-5xl font-bold">Meus Projetos</h2>
+        <h2 className="text-[3.5em] font-bold pl-5">Meus Projetos</h2>
         <Projects projects={projects} />
       </section>
 
-      <section id="skillsSection" className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20" >
+      <section
+        id="skillsSection"
+        className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20"
+      >
         <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
-          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Hard Skills</h2>
+          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
+            Hard Skills
+          </h2>
           <div>
-            <ul>
-              <li>JavaScript</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>Git</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>SQL</li>
-              <li>API Rest</li>
-              <li>Python</li>
+            <ul id="hardSkills">
+              <li>
+                <abbr title="JavaScript">
+                  <SiJavascript />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="TypeScript">
+                  <SiTypescript />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="React">
+                  <SiReact />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="Node.Js">
+                  <FaNodeJs />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="GIT">
+                  <SiGit />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="HTML">
+                  <SiHtml5 />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="CSS">
+                  <SiCss />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="PostgreSQL">
+                  <SiPostgresql />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="Python">
+                  <SiPython />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="Next.js">
+                  <SiNextdotjs />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="Api Rest">
+                  <FaServer />
+                </abbr>
+              </li>
+              <li>
+                <abbr title="Tailwind CSS">
+                  <SiTailwindcss />
+                </abbr>
+              </li>
             </ul>
           </div>
         </div>
         <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
-          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">Soft Skills</h2>
+          <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
+            Soft Skills
+          </h2>
           <div>
             <ul>
               <li>Aprendizagem contínua</li>

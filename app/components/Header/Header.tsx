@@ -9,10 +9,10 @@ export default function Header() {
             <nav>
                 <ul className="flex text-xl gap-6">
                     <li>
-                        <a href="#">Sobre mim</a>
+                        <a href="#aboutSection">Sobre mim</a>
                     </li>
                     <li>
-                        <a href="#">Projetos</a>
+                        <a href="#projects">Projetos</a>
                     </li>
                     <li>
                         <a target='_blank' href="https://github.com/davirodriguesdias" className="flex items-center gap-2">

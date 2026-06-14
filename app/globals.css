@@ -204,7 +204,7 @@ body::after {
   gap: 10px;
   color: #061426;
   font-weight: bold;
-  padding: 5px;
+  padding: 20px;
   
 }
 
@@ -213,6 +213,10 @@ body::after {
   padding: 10px 8px;
   border-radius: 10px;
   font-size: 1.2em;
+}
+
+#hardSkills{
+  font-size: 1.6em;
 }
 
 

@@ -10,23 +10,28 @@ export default function Footer() {
         </div>
         <div className="flex flex-col gap-3 border-l-2 border-[#354656] h-60 px-10">
           <h2 className="text-[#354656]">Redes Sociais</h2>
-          <a
-            className="pl-1 font-bold uppercase text-2xl"
-            target="_blank"
-            href="https://github.com/davirodriguesdias"
-          >
-            Github
-          </a>
-          <a
-            className="pl-1 font-bold uppercase text-2xl"
-            target="_blank"
-            href="https://github.com/davirodriguesdias"
-          >
-            Linkedin
-          </a>
-          <a className="pl-1 font-bold uppercase text-2xl" href="">
-            Instagram
-          </a>
+          <div className="flex flex-col gap-3 pl-1">
+            <a
+              className=" font-bold uppercase text-2xl border-b-3 w-23"
+              target="_blank"
+              href="https://github.com/davirodriguesdias"
+            >
+              Github
+            </a>
+            <a
+              className=" font-bold uppercase text-2xl border-b-3 w-29"
+              target="_blank"
+              href="https://github.com/davirodriguesdias"
+            >
+              Linkedin
+            </a>
+            <a
+              className=" font-bold uppercase text-2xl border-b-3 w-35"
+              href=""
+            >
+              Instagram
+            </a>
+          </div>
         </div>
       </div>
       <div className="text-center">
