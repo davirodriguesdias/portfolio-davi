@@ -56,7 +56,7 @@ export function Projects({ projects }: ProjectsProps) {
   // }
 
   return (
-    <div className="overflow-hidden">
+    <div className="projectsAnimation overflow-hidden">
       <div className={`py-10 flex gap-5 ${isDragging ? "transition-none" : "transition-transform duration-300 ease-out"} cursor-grabbing `}
            style={{ transform: `translateX(calc( ${dragOffset}px))` }}
            onMouseDown={handleMouseDown}

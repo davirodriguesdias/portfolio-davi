@@ -225,6 +225,29 @@ body::after {
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 
+.imageAnimation {
+  opacity: 0;
+  transform: translateX(-48px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.projectsAnimation {
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.titleProjectsAnimations {
+  opacity: 0;
+  transform: translateX(-15px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.skillsAnimation {
+  opacity: 0;
+  transform: translateY(-48px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
 .visibleText {
   opacity: 1;
   transform: none;

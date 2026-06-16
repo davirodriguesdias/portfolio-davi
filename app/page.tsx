@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { Projects } from "./components/Projects/Projects";
 import {
@@ -15,7 +15,6 @@ import {
 } from "react-icons/si";
 import { FaNodeJs, FaServer } from "react-icons/fa";
 import { useEffect } from "react";
-
 
 export default function Home() {
   const projects = [
@@ -50,25 +49,40 @@ export default function Home() {
       description: "Descrição do projeto 5",
     },
   ];
-  
-useEffect(() => {
- 
-  const observer = new IntersectionObserver(
-    (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry: IntersectionObserverEntry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visibleText");
-        }
-      });
-    },
-    { threshold: 0.25 },
-  );
-  document
-    .querySelectorAll<HTMLElement>(".textAnimation")
-    .forEach((el) => observer.observe(el));
 
-  return () => observer.disconnect();
-}, []);  
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries: IntersectionObserverEntry[]) => {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visibleText");
+          }
+        });
+      },
+      { threshold: 0.25 },
+    );
+    document
+      .querySelectorAll<HTMLElement>(".textAnimation")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll<HTMLElement>(".imageAnimation")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll<HTMLElement>(".titleProjectsAnimations")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll<HTMLElement>(".projectsAnimation")
+      .forEach((el) => observer.observe(el));
+
+    document
+      .querySelectorAll<HTMLElement>(".skillsAnimation")
+      .forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <main className="pt-35">
@@ -89,7 +103,7 @@ useEffect(() => {
         className="flex justify-evenly h-screen w-screen bg-[#060f1e] px-10 py-50"
         id="aboutSection"
       >
-        <div className="w-[461px] h-[421px] rounded-4xl overflow-hidden">
+        <div className="imageAnimation w-[461px] h-[421px] rounded-4xl overflow-hidden">
           <img
             className="w-full h-full object-cover"
             src="/images/davi.jpeg"
@@ -113,15 +127,17 @@ useEffect(() => {
         id="projects"
         className="h-[130vh] w-screen bg-[#060f1e] px-10 py-50 "
       >
-        <h2 className="text-[3.5em] font-bold pl-5">Meus Projetos</h2>
+        <h2 className="titleProjectsAnimations text-[3.5em] font-bold pl-5">
+          Meus Projetos
+        </h2>
         <Projects projects={projects} />
       </section>
 
       <section
         id="skillsSection"
-        className=" flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20"
+        className="flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20"
       >
-        <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+        <div className="skillsAnimation bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
             Hard Skills
           </h2>
@@ -190,7 +206,7 @@ useEffect(() => {
             </ul>
           </div>
         </div>
-        <div className="bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+        <div className="skillsAnimation bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
             Soft Skills
           </h2>
