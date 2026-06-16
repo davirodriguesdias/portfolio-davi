@@ -1,4 +1,4 @@
-"user client";
+'use client';
 
 import { Projects } from "./components/Projects/Projects";
 import {
@@ -14,6 +14,8 @@ import {
   SiTailwindcss,
 } from "react-icons/si";
 import { FaNodeJs, FaServer } from "react-icons/fa";
+import { useEffect } from "react";
+
 
 export default function Home() {
   const projects = [
@@ -48,6 +50,25 @@ export default function Home() {
       description: "Descrição do projeto 5",
     },
   ];
+  
+useEffect(() => {
+ 
+  const observer = new IntersectionObserver(
+    (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry: IntersectionObserverEntry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visibleText");
+        }
+      });
+    },
+    { threshold: 0.25 },
+  );
+  document
+    .querySelectorAll<HTMLElement>(".textAnimation")
+    .forEach((el) => observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);  
 
   return (
     <main className="pt-35">
@@ -75,7 +96,7 @@ export default function Home() {
             alt="Davi Dias"
           />
         </div>
-        <div className=" flex gap-4 flex-col w-[50%]">
+        <div className="textAnimation flex gap-4 flex-col w-[50%]">
           <h2 className="text-5xl font-bold">
             Minha trajetória no mundo da tecnologia
           </h2>

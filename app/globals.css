@@ -219,4 +219,13 @@ body::after {
   font-size: 1.6em;
 }
 
+.textAnimation {
+  opacity: 0;
+  transform: translateY(48px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
 
+.visibleText {
+  opacity: 1;
+  transform: none;
+}
