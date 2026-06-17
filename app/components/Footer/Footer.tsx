@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-y-10 justify-center py-70 pr-30 bg-[#060f1e] h-screen w-screen">
+    <footer id="footer" className="flex flex-col gap-y-10 justify-center py-70 pr-30 bg-[#060f1e] h-screen w-screen">
       <div className="flex flex-row gap-x-10 justify-center">
         <div className="flex flex-col gap-3 h-60">
           <h2 className="text-[#354656]">Localização</h2>

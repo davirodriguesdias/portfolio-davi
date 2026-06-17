@@ -93,9 +93,11 @@ export default function Home() {
           <button className="bg-[#091F3A] text-[#EAF4FF] rounded-md px-6 py-2">
             Baixar CV
           </button>
-          <button className="bg-[#EAF4FF] text-[#091F3A] rounded-md px-6 py-2">
-            Contacts
-          </button>
+          <a href="#footer" >
+            <button className="cursor-pointer bg-[#EAF4FF] text-[#091F3A] rounded-md px-6 py-2">
+              Contacts
+            </button>
+          </a>
         </div>
       </section>
 
@@ -143,64 +145,64 @@ export default function Home() {
           </h2>
           <div>
             <ul id="hardSkills">
-              <li>
+              <li className="hover:text-yellow-400">
                 <abbr title="JavaScript">
-                  <SiJavascript className="hover:text-yellow-400" />
+                  <SiJavascript />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-blue-400">
                 <abbr title="TypeScript">
-                  <SiTypescript className="hover:text-blue-400"/>
+                  <SiTypescript />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-blue-400">
                 <abbr title="React">
-                  <SiReact className="hover:text-blue-400"/>
+                  <SiReact />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-green-400">
                 <abbr title="Node.Js">
-                  <FaNodeJs className="hover:text-green-400"/>
+                  <FaNodeJs />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-orange-400">
                 <abbr title="GIT">
-                  <SiGit className="hover:text-orange-400"/>
+                  <SiGit />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-orange-400">
                 <abbr title="HTML">
-                  <SiHtml5 className="hover:text-orange-400"/>
+                  <SiHtml5 />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-purple-400">
                 <abbr title="CSS">
-                  <SiCss className="hover:text-purple-400"/>
+                  <SiCss />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-blue-400">
                 <abbr title="PostgreSQL">
-                  <SiPostgresql className="hover:text-blue-400"/>
+                  <SiPostgresql />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-yellow-400">
                 <abbr title="Python">
-                  <SiPython className="hover:text-yellow-400"/>
+                  <SiPython />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-black">
                 <abbr title="Next.js">
-                  <SiNextdotjs className="hover:text-black"/>
+                  <SiNextdotjs />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-gray-400">
                 <abbr title="Api Rest">
-                  <FaServer className="hover:text-gray-400"/>
+                  <FaServer />
                 </abbr>
               </li>
-              <li>
+              <li className="hover:text-blue-400">
                 <abbr title="Tailwind CSS">
-                  <SiTailwindcss className="hover:text-blue-400"/>
+                  <SiTailwindcss />
                 </abbr>
               </li>
             </ul>
