@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 export default function Header() {
     return (
-        <header className="flex justify-between p-11 px-21 w-full font-semibold">
+        <header className="fixed top-0 left-0 z-999 flex justify-between p-11 px-21 w-full font-semibold ">
             <h1 className="text-4xl">
                 <a href="#">Davi</a>
             </h1>

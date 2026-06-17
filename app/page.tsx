@@ -86,7 +86,7 @@ export default function Home() {
 
   return (
     <main className="pt-35">
-      <section id="headerSection" className="h-[63vh] px-21">
+      <section id="headerSection" className="pt-35 h-[81vh] px-21">
         <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
 
         <div className="flex gap-4 p-4">
@@ -145,62 +145,62 @@ export default function Home() {
             <ul id="hardSkills">
               <li>
                 <abbr title="JavaScript">
-                  <SiJavascript />
+                  <SiJavascript className="hover:text-yellow-400" />
                 </abbr>
               </li>
               <li>
                 <abbr title="TypeScript">
-                  <SiTypescript />
+                  <SiTypescript className="hover:text-blue-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="React">
-                  <SiReact />
+                  <SiReact className="hover:text-blue-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="Node.Js">
-                  <FaNodeJs />
+                  <FaNodeJs className="hover:text-green-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="GIT">
-                  <SiGit />
+                  <SiGit className="hover:text-orange-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="HTML">
-                  <SiHtml5 />
+                  <SiHtml5 className="hover:text-orange-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="CSS">
-                  <SiCss />
+                  <SiCss className="hover:text-purple-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="PostgreSQL">
-                  <SiPostgresql />
+                  <SiPostgresql className="hover:text-blue-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="Python">
-                  <SiPython />
+                  <SiPython className="hover:text-yellow-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="Next.js">
-                  <SiNextdotjs />
+                  <SiNextdotjs className="hover:text-black"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="Api Rest">
-                  <FaServer />
+                  <FaServer className="hover:text-gray-400"/>
                 </abbr>
               </li>
               <li>
                 <abbr title="Tailwind CSS">
-                  <SiTailwindcss />
+                  <SiTailwindcss className="hover:text-blue-400"/>
                 </abbr>
               </li>
             </ul>
