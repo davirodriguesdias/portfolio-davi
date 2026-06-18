@@ -55,7 +55,7 @@ export default function Home() {
       (entries: IntersectionObserverEntry[]) => {
         entries.forEach((entry: IntersectionObserverEntry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visibleText");
+            entry.target.classList.add("visible");
           }
         });
       },
@@ -83,6 +83,7 @@ export default function Home() {
 
     return () => observer.disconnect();
   }, []);
+
 
   return (
     <main className="pt-35">
