@@ -87,8 +87,15 @@ export default function Home() {
 
   return (
     <main className="pt-35">
-      <section id="headerSection" className="pt-35 h-[81vh] px-21">
-        <h1 className="typewriter text-9xl font-bold">Hello, I'm Davi Dias!</h1>
+      <section id="headerSection" className="pt-35 h-[81vh] sm:px-21 px-5 ">
+        <h1 className="sm:text-9xl text-5xl font-bold">
+          <span className="hidden typewriterDesktop sm:block">Hello, I'm Davi Dias!</span>
+
+          <span className="block sm:hidden">
+            <span className="typewriterMobile1 block">Hello, I'm</span>
+            <span className="typewriterMobile2 block">Davi Dias!</span>
+          </span>
+        </h1>
 
         <div className="flex gap-4 p-4">
           <button className="bg-[#091F3A] text-[#EAF4FF] rounded-md px-6 py-2">
