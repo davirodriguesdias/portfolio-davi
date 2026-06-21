@@ -1,6 +1,6 @@
 'use client';
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaBars } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 export default function Header() {
@@ -23,11 +23,17 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`fixed top-0 left-0 z-999 flex justify-between p-11 px-21 w-full font-semibold ${isVisible ? 'bg-gray-900/80 backdrop-blur-sm' : 'bg-transparent'}`}>
-      <h1 className="text-4xl">
+    <header className={`fixed top-0 left-0 z-999 flex justify-between p-5 sm:p-11 sm:px-21 w-full font-semibold ${isVisible ? 'bg-gray-900/80 backdrop-blur-sm' : 'bg-transparent'}`}>
+      <h1 className="text-2xl sm:text-4xl">
         <a href="#">Davi</a>
       </h1>
-      <nav>
+
+      <div className="sm:hidden text-2xl cursor-pointer pr-15"> 
+        {/* paddind temporario  */}
+        <FaBars/>
+      </div>
+  
+      <nav className="hidden sm:block">
         <ul className="flex text-xl gap-6">
           <li>
             <a href="#aboutSection">Sobre mim</a>

@@ -97,12 +97,12 @@ export default function Home() {
           </span>
         </h1>
 
-        <div className="flex gap-4 p-4">
-          <button className="bg-[#091F3A] text-[#EAF4FF] rounded-md px-6 py-2">
+        <div className="flex gap-4 pt-3 sm:p-4">
+          <button className="cursor-pointer bg-[#091F3A] text-[#EAF4FF] rounded-md px-3 py-1 sm:px-6 sm:py-2">
             Baixar CV
           </button>
           <a href="#footer" >
-            <button className="cursor-pointer bg-[#EAF4FF] text-[#091F3A] rounded-md px-6 py-2">
+            <button className="cursor-pointer bg-[#EAF4FF] text-[#091F3A] rounded-md px-3 py-1 sm:px-6 sm:py-2">
               Contacts
             </button>
           </a>
