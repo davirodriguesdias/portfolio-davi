@@ -86,7 +86,7 @@ export default function Home() {
 
 
   return (
-    <main className="pt-35">
+    <main className=" pt-31 sm:pt-35">
       <section id="headerSection" className="pt-35 h-[81vh] sm:px-21 px-5 ">
         <h1 className="sm:text-9xl text-5xl font-bold">
           <span className="hidden typewriterDesktop sm:block">Hello, I'm Davi Dias!</span>
@@ -110,21 +110,21 @@ export default function Home() {
       </section>
 
       <section
-        className="flex justify-evenly h-screen w-screen bg-[#060f1e] px-10 py-50"
+        className="flex flex-col gap-5 max-sm:items-center sm:justify-evenly sm:flex-row h-auto sm:h-screen w-full bg-[#060f1e] py-20 sm:px-10 sm:py-50"
         id="aboutSection"
       >
-        <div className="imageAnimation w-[461px] h-[421px] rounded-4xl overflow-hidden">
+        <div className="flex imageAnimation w-[230px] h-[210px] sm:w-[461px] sm:h-[421px] rounded-4xl overflow-hidden">
           <img
             className="w-full h-full object-cover"
             src="/images/davi.jpeg"
             alt="Davi Dias"
           />
         </div>
-        <div className="textAnimation flex gap-4 flex-col w-[50%]">
-          <h2 className="text-5xl font-bold">
+        <div className="textAnimation flex text-center sm:text-left gap-4 flex-col w-[75%] sm:w-[50%]">
+          <h2 className="text-2xl sm:text-5xl font-bold">
             Minha trajetória no mundo da tecnologia
           </h2>
-          <p className="text-lg text-gray-400 text-justify">
+          <p className="sm:text-lg text-gray-400 sm:text-justify">
             Estudante de Sistemas de Informação dedicado ao desenvolvimento web
             Full Stack. Profissional em contínuo aperfeiçoamento técnico, focado
             na melhoria contínua de habilidades e na aplicação de boas práticas
