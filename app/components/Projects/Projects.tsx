@@ -67,7 +67,7 @@ export function Projects({ projects }: ProjectsProps) {
         {/* <button onClick={previousProject}>Anterior</button> */}
         {projects.map((project) => (
           <div key={project.id}>
-            <div className="w-120 rounded-[5px] overflow-hidden">
+            <div className="w-120 sm:w-120 sm:rounded-[5px] sm:overflow-hidden">
               <img className="object-cover" src={project.image} alt="Project" />
             </div>
             <div className="pl-2">

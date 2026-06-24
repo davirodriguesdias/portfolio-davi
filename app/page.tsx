@@ -120,11 +120,11 @@ export default function Home() {
             alt="Davi Dias"
           />
         </div>
-        <div className="textAnimation flex text-center sm:text-left gap-4 flex-col w-[75%] sm:w-[50%]">
-          <h2 className="text-2xl sm:text-5xl font-bold">
+        <div className="textAnimation flex sm:text-left gap-4 flex-col w-[75%] sm:w-[50%]">
+          <h2 className=" text-center sm:text-left text-2xl sm:text-5xl font-bold">
             Minha trajetória no mundo da tecnologia
           </h2>
-          <p className="sm:text-lg text-gray-400 sm:text-justify">
+          <p className="sm:text-lg text-gray-400 text-justify">
             Estudante de Sistemas de Informação dedicado ao desenvolvimento web
             Full Stack. Profissional em contínuo aperfeiçoamento técnico, focado
             na melhoria contínua de habilidades e na aplicação de boas práticas
@@ -135,9 +135,10 @@ export default function Home() {
 
       <section
         id="projects"
-        className="h-[130vh] w-screen bg-[#060f1e] px-10 py-50 "
+        className="h-auto w-screen bg-[#060f1e] sm:px-10 px-5 py-20 sm:py-50"
       >
-        <h2 className="titleProjectsAnimations text-[3.5em] font-bold pl-5">
+        {/* titleProjectsAnimations */}
+        <h2 className=" text-[2em] sm:text-[3.5em] font-bold">
           Meus Projetos
         </h2>
         <Projects projects={projects} />
@@ -145,9 +146,9 @@ export default function Home() {
 
       <section
         id="skillsSection"
-        className="flex gap-x-5 justify-center h-screen w-screen bg-[#060f1e] px-10 py-20"
+        className="flex sm:flex-row flex-col gap-y-10 sm:gap-x-5 justify-center h-auto sm:h-screen w-screen bg-[#060f1e] px-10 py-20"
       >
-        <div className="skillsAnimation bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+        <div className="skillsAnimation bg-[#0a1629] h-auto sm:h-90 w-auto sm:w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
             Hard Skills
           </h2>
@@ -216,11 +217,11 @@ export default function Home() {
             </ul>
           </div>
         </div>
-        <div className="skillsAnimation bg-[#0a1629] h-90 w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
+        <div className="skillsAnimation bg-[#0a1629] h-90 w-auto sm:w-120 rounded-[8px] overflow-hidden outline-[#1d2e3f] outline-2">
           <h2 className="text-3xl font-bold bg-[#091F3A] px-8 py-4">
             Soft Skills
           </h2>
-          <div>
+          <div className="text-[0.75em] sm:text-[1em]">
             <ul>
               <li>Aprendizagem contínua</li>
               <li>Criatividade</li>
