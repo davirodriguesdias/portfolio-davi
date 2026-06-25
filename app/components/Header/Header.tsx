@@ -32,7 +32,7 @@ export default function Header() {
 
       <div className="sm:hidden">
         {/* paddind temporario  */}
-        <button className="text-2xl cursor-pointer pr-15">
+        <button className="text-2xl cursor-pointer">
           <FaBars />
         </button>
       </div>
