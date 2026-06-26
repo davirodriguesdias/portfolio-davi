@@ -6,8 +6,8 @@ export default function Footer() {
       id="footer"
       className="flex flex-col pt-50 max-sm:pb-20 sm:gap-y-10 justify-center sm:py-70 sm:pr-30 bg-[#060f1e] h-auto w-auto sm:h-screen sm:w-screen"
     >
-      <div className="flex flex-col max-sm:pl-5 sm:flex-row gap-x-10 justify-center">
-        <div className="flex flex-col gap-3 h-50 sm:h-60">
+      <div className="flex flex-col max-sm:pl-5 sm:flex-row max-sm:gap-y-10 sm:gap-x-10 justify-center">
+        <div className="flex flex-col gap-3 sm:h-60">
           <h2 className="text-[#354656] flex items-center gap-1">
             {" "}
             <FaMapMarkerAlt /> Localização
@@ -26,21 +26,21 @@ export default function Footer() {
           </h2>
           <div className="flex flex-col gap-3 pl-1">
             <a
-              className=" font-bold uppercase text-[1.4em] sm:text-2xl border-b-3 w-22 sm:w-23"
+              className=" font-bold uppercase text-[1.3em] sm:text-2xl border-b-3 w-20 sm:w-23"
               target="_blank"
               href="https://github.com/davirodriguesdias"
             >
               Github
             </a>
             <a
-              className=" font-bold uppercase  text-[1.4em] sm:text-2xltext-2xl border-b-3 w-28 sm:w-29"
+              className=" font-bold uppercase  text-[1.3em] sm:text-2xltext-2xl border-b-3 w-25 sm:w-29"
               target="_blank"
               href="https://github.com/davirodriguesdias"
             >
               Linkedin
             </a>
             <a
-              className=" font-bold uppercase text-[1.4em] sm:text-2xl text-2xl border-b-3 w-33 sm:w-35"
+              className=" font-bold uppercase text-[1.3em] sm:text-2xl text-2xl border-b-3 w-30 sm:w-35"
               href=""
             >
               Instagram
