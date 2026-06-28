@@ -14,9 +14,9 @@ type ProjectsProps = {
 };
 
 export function Projects({ projects }: ProjectsProps) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
   const [dragOffset, setDragOffset] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
+  const [isDragging, setIsDragging] = useState<boolean>(false);
 
   const startX = useRef(0);
 

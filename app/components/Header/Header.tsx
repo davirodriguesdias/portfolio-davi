@@ -4,7 +4,8 @@ import { FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 export default function Header() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
+  const [menuVisible, setmenuVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const setScroll = () => {
@@ -31,15 +32,14 @@ export default function Header() {
 
       <div id="mobileMenu" className="sm:hidden">
         {/* paddind temporario  */}
-        <button className="pt-1 text-2xl cursor-pointer">
-          <FaBars />
+        <button
+          onClick={() => setmenuVisible(!menuVisible)}
+          className="absolute top-6 right-5 z-51 text-2xl cursor-pointer"
+        >
+          {menuVisible ? <FaTimes /> : <FaBars />}
         </button>
 
-        <div className="absolute top-7 z-51 text-2xl cursor-pointer">
-          <FaTimes />
-        </div>
-
-        <nav className="sm:hidden bg-gray-900 w-[70vw] h-screen absolute top-0 right-0 z-50">
+        <nav className={`sm:hidden bg-gray-900 w-[70vw] h-screen absolute top-0 z-50 transition-all duration-300 ${menuVisible ? ' right-0 opacity-100' : 'right-[-20px] opacity-0'} `}>
           <ul className="flex flex-col gap-6 text-[1.37em] justify-center-safe p-9 h-full border-l border-[#262b2f]">
             <li>
               <a href="#aboutSection">Sobre mim</a>
