@@ -20,31 +20,31 @@ export default function Home() {
   const projects = [
     {
       id: 1,
-      image: "images/teste.png",
+      image: "images/emandamento.png",
       title: "Projeto 1",
       description: "Descrição do projeto 1",
     },
     {
       id: 2,
-      image: "images/teste.png",
+      image: "images/emandamento.png",
       title: "Projeto 2",
       description: "Descrição do projeto 2",
     },
     {
       id: 3,
-      image: "images/teste.png",
+      image: "images/emandamento.png",
       title: "Projeto 3",
       description: "Descrição do projeto 3",
     },
     {
       id: 4,
-      image: "images/teste.png",
+      image: "images/emandamento.png",
       title: "Projeto 4",
       description: "Descrição do projeto 4",
     },
     {
       id: 5,
-      image: "images/teste.png",
+      image: "images/emandamento.png",
       title: "Projeto 5",
       description: "Descrição do projeto 5",
     },

@@ -18,16 +18,29 @@ export function Projects({ projects }: ProjectsProps) {
   const [dragOffset, setDragOffset] = useState(0);
   const [isDragging, setIsDragging] = useState<boolean>(false);
 
-  const startX = useRef(0);
+  const startXMouse = useRef(0);
+  const startXTouch = useRef(0);
 
   function handleMouseDown(e: React.MouseEvent<HTMLDivElement>) {
     setIsDragging(true);
-    startX.current = e.clientX;
+    startXMouse.current = e.clientX;
   }
 
   function handleMouseMove(e: React.MouseEvent<HTMLDivElement>) {
     if (!isDragging) return;
-    const offset = e.clientX - startX.current;
+    const offset = e.clientX - startXMouse.current;
+    setDragOffset(offset);
+  }
+
+  
+  function handleTouchStart(e: React.TouchEvent<HTMLDivElement>) {
+    setIsDragging(true);
+    startXTouch.current = e.touches[0].clientX;
+  }
+
+  function handleTouchMove(e: React.TouchEvent<HTMLDivElement>) {
+    if (!isDragging) return;
+    const offset = e.touches[0].clientX; - startXTouch.current;
     setDragOffset(offset);
   }
 
@@ -61,13 +74,15 @@ export function Projects({ projects }: ProjectsProps) {
            style={{ transform: `translateX(calc( ${dragOffset}px))` }}
            onMouseDown={handleMouseDown}
            onMouseMove={handleMouseMove}
+           onTouchStart={handleTouchStart}
+           onTouchMove={handleTouchMove}
           //  onMouseUp={handleMouseUp}
           //  onMouseLeave={handleMouseUp}
            >
         {/* <button onClick={previousProject}>Anterior</button> */}
         {projects.map((project) => (
           <div key={project.id}>
-            <div className="w-120 sm:w-120 sm:rounded-[5px] sm:overflow-hidden">
+            <div className="w-83 sm:w-120 sm:rounded-[5px] sm:overflow-hidden">
               <img className="object-cover" src={project.image} alt="Project" />
             </div>
             <div className="pl-2">
